@@ -22,20 +22,18 @@ public class Main {
 
 
     //Урок Методы. Задание 1.
-    public static int isYearLeap(int year) {
+    public static void isYearLeap(int year) {
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " год является високосным");
-            return (year);
-        }
+                   }
         else {
             System.out.println(year + " год не является високосным");
-            return (year);
         }
     }
 
     //Урок Методы. Задание 2.
 
-    public static int whatIsOSVersion (int clientOS, int releaseYear) {
+    public static void whatIsOSVersion (int clientOS, int releaseYear) {
         int currentYear = LocalDate.now().getYear();
         if (clientOS == 0 && releaseYear == currentYear) {
             System.out.println("Установите версию приложения для iOS по ссылке");
@@ -47,12 +45,11 @@ public class Main {
         } else if (clientOS == 1 && releaseYear < currentYear) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
-        return(clientOS);
 
     }
 
     //Урок Методы. Задание 3.
-    public  static int howMuchDaysOfDelivery (int deliveryDistance) {
+    public  static void howMuchDaysOfDelivery (int deliveryDistance) {
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: 1" );
         }
@@ -65,7 +62,6 @@ public class Main {
         else {
             System.out.println("Доставка невозможна");
         }
-        return (deliveryDistance);
 
     }
 
